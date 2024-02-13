@@ -25,7 +25,7 @@
      display: none;
  }
  #desktop{
-     width: 98%;
+     width: 100%;
  }
  
  header img{
@@ -166,7 +166,7 @@
  
      #mobile{
          display: block;
-         width: 60%;
+         width: 100%;
      } 
  
      .Martin{
