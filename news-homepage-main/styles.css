@@ -1,0 +1,201 @@
+.grid-container{
+    display: grid;
+     grid-template-columns: repeat(3, 1fr );
+     grid-template-rows: 100px auto 100px ;
+    column-gap: 20px;
+    row-gap: 10px;
+     height: 100vh;
+     margin: 0px auto;
+     width: 100%;
+ }
+ header{
+     grid-column-start: span 3;
+     background-color: aqua;
+ }
+ 
+ header{
+   
+     grid-column-start:span 3;
+     margin-top: 35px;
+ }
+ #menu-1{
+     display: none;
+ }
+ #mobile{
+     display: none;
+ }
+ #desktop{
+     width: 96%;
+ }
+ 
+ header img{
+     text-align: center;
+     width: 40px;
+     margin: 10px 50px 10px 0;
+ }
+ header nav{
+     float:  right;
+     
+ }
+ header li{
+     text-decoration: none;
+     display: inline;
+     list-style-type: none;
+ }
+ header a{
+      text-decoration: none;
+      color: black;
+     justify-content: space-between;
+     margin-left:20px;
+     font-size: 12px;
+ }
+ header a:hover{
+     color: blue;
+ }
+ 
+ main{
+     grid-column-start: span 1;
+     /* background-color:red; */
+ }
+ 
+ .Martin{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ .Bright{
+    width: 40%; 
+     
+ }
+ .Bright h1{
+   font-weight: 900; 
+   font-size: 40px;
+   
+ }
+ 
+ .Bright-1{
+     width: 50%;
+ }
+ 
+ .Bright-1 p{
+     font-size: 15px;
+     margin-right: 12px;
+     padding-bottom: 15px;
+ }
+ 
+ .Bright-1 button{
+     background-color: hsl(5, 85%, 63%);
+     color: white;
+     border: none;
+     height: 25px;
+     font-size: 15px;
+     width: 40%;
+ 
+ }
+ 
+ main > img{
+     width: 100%;
+ }
+ 
+ aside{
+     grid-column-start: span 2;
+     background-color: hsl(240, 100%, 5%);
+ }
+   
+  aside h1{
+     color: hsl(35, 77%, 62%);
+     font-size: 30px;
+     margin: 8px 14px 0;
+  }
+ 
+  .Hydrogen{
+     margin: 0px 14px 0;
+  }
+   
+  .Hydrogen h2{
+     font-size: 17px;
+     font-weight: 900;
+     position: relative;
+     margin-bottom: -10px;
+     color:wheat;
+  }
+ 
+  .Hydrogen p{
+     font-size: 15px;
+     color: white;
+  }
+ 
+  .parent{
+     display: grid;
+     grid-template-columns: auto auto auto;
+     gap: 20px;
+     padding: 10px;
+  }
+ 
+  #child-3{
+     display: grid;
+     grid-template-columns: auto auto;
+     gap: 15px;
+     padding-left: 20px;
+  }
+ 
+  .child h2{
+    font-size: 25px;
+    color: hsl(233, 8%, 79%);
+  }
+  .child h3{
+     font-size: 20px;
+     color: hsl(240, 100%, 5%);
+  }
+ 
+  @media screen and (max-width:600px) {
+     .grid-container{
+         grid-template-columns: 1fr;
+         grid-template-rows: 100px auto auto
+          100px;
+         display: grid;
+    
+    
+         header,main,aside{
+             grid-column-start: span 1;
+         }
+ 
+     } 
+      #desktop{display: none;}
+ 
+     #mobile{
+         display: block;
+         width: 50%;
+     } 
+ 
+     .Martin{
+         display: grid;
+     }
+ 
+     .Bright{
+         width: 100%;
+     }
+     .Bright-1{
+         width: 90%;
+         position: relative;
+         bottom: 20px;
+     }
+     .Bright-1 p{
+         font-size: 15px;
+     }
+     .Bright-1 button{
+         position: relative;
+         bottom: 20px;
+         width:50%;
+         border-radius: 10px;
+     }
+     .parent{
+         display: block;
+         padding: 10px;
+         gap: 20px;
+     }
+     #child-3 >img {
+         margin-bottom: 10px;
+     }
+  }
+ 
